@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Salary
+//  Wolgeup
 //
-//  Created by Jeonggi Hong on 2022/02/08.
+//  Created by Jeonggi Hong on 2022/02/11.
 //
 
 import UIKit
