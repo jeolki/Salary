@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D64375CC27BF808D00719D52 /* NumberWorkingDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64375CB27BF808D00719D52 /* NumberWorkingDays.swift */; };
 		D64F7DAA27BA375300EE16B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F7DA927BA375300EE16B3 /* AppDelegate.swift */; };
 		D64F7DAC27BA375300EE16B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F7DAB27BA375300EE16B3 /* SceneDelegate.swift */; };
 		D64F7DAE27BA375300EE16B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F7DAD27BA375300EE16B3 /* ViewController.swift */; };
@@ -16,9 +17,11 @@
 		D64F7DBE27BA380700EE16B3 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F7DBD27BA380700EE16B3 /* DailyViewController.swift */; };
 		D64F7DC027BA3A1000EE16B3 /* MonthlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F7DBF27BA3A1000EE16B3 /* MonthlyViewController.swift */; };
 		D64F7DC227BA3A8E00EE16B3 /* YearlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F7DC127BA3A8E00EE16B3 /* YearlyViewController.swift */; };
+		D64F7DC427BB7C8400EE16B3 /* Wolgeup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F7DC327BB7C8400EE16B3 /* Wolgeup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D64375CB27BF808D00719D52 /* NumberWorkingDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberWorkingDays.swift; sourceTree = "<group>"; };
 		D64F7DA627BA375300EE16B3 /* Wolgeup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wolgeup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64F7DA927BA375300EE16B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D64F7DAB27BA375300EE16B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		D64F7DBD27BA380700EE16B3 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
 		D64F7DBF27BA3A1000EE16B3 /* MonthlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyViewController.swift; sourceTree = "<group>"; };
 		D64F7DC127BA3A8E00EE16B3 /* YearlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyViewController.swift; sourceTree = "<group>"; };
+		D64F7DC327BB7C8400EE16B3 /* Wolgeup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wolgeup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 			children = (
 				D64F7DA927BA375300EE16B3 /* AppDelegate.swift */,
 				D64F7DAB27BA375300EE16B3 /* SceneDelegate.swift */,
+				D64F7DC327BB7C8400EE16B3 /* Wolgeup.swift */,
+				D64375CB27BF808D00719D52 /* NumberWorkingDays.swift */,
 				D64F7DAD27BA375300EE16B3 /* ViewController.swift */,
 				D64F7DBD27BA380700EE16B3 /* DailyViewController.swift */,
 				D64F7DBF27BA3A1000EE16B3 /* MonthlyViewController.swift */,
@@ -147,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64375CC27BF808D00719D52 /* NumberWorkingDays.swift in Sources */,
+				D64F7DC427BB7C8400EE16B3 /* Wolgeup.swift in Sources */,
 				D64F7DC227BA3A8E00EE16B3 /* YearlyViewController.swift in Sources */,
 				D64F7DAE27BA375300EE16B3 /* ViewController.swift in Sources */,
 				D64F7DAA27BA375300EE16B3 /* AppDelegate.swift in Sources */,
@@ -317,7 +325,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -344,7 +352,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -15,6 +15,13 @@ class DailyViewController: UIViewController {
     
         pageChangedSwipe()
     }
+    
+    
+    
+    
+    
+    
+    
 }
 
 

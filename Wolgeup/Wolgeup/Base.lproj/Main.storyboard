@@ -17,19 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Leg-0x-R0v">
-                                <rect key="frame" x="50" y="184" width="205" height="182"/>
+                                <rect key="frame" x="50" y="184" width="206.5" height="184"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcZ-Kr-RPB">
-                                        <rect key="frame" x="0.0" y="0.0" width="59" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="43"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="NqZ-8G-iuM">
-                                        <rect key="frame" x="0.0" y="46.5" width="205" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="47" width="206.5" height="43"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매달" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="508-cU-faD">
-                                                <rect key="frame" x="0.0" y="0.0" width="70" height="42.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="43"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="EJI-Ml-elQ"/>
                                                 </constraints>
@@ -38,17 +38,20 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="10" textAlignment="right" minimumFontSize="34" translatesAutoresizingMaskIntoConstraints="NO" id="YZX-oq-wkF">
-                                                <rect key="frame" x="73" y="0.0" width="41.5" height="42.5"/>
+                                                <rect key="frame" x="73" y="0.0" width="43" height="43"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="41.5" id="sam-cZ-DvF"/>
-                                                    <constraint firstAttribute="height" constant="42.5" id="udP-sd-sjq"/>
+                                                    <constraint firstAttribute="width" constant="43" id="sam-cZ-DvF"/>
+                                                    <constraint firstAttribute="height" constant="43" id="udP-sd-sjq"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="dayTextChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="wy1-xc-PHz"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일 에" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COA-EF-00t">
-                                                <rect key="frame" x="117.5" y="0.0" width="87.5" height="42.5"/>
+                                                <rect key="frame" x="119" y="0.0" width="87.5" height="43"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="87.5" id="0aU-oB-gmq"/>
                                                 </constraints>
@@ -59,16 +62,19 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gE7-1e-YCI">
-                                        <rect key="frame" x="0.0" y="93" width="195" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="94" width="195" height="43"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="2,400,000" textAlignment="natural" minimumFontSize="34" translatesAutoresizingMaskIntoConstraints="NO" id="y7P-Zl-ymP">
-                                                <rect key="frame" x="0.0" y="0.0" width="160.5" height="42.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="160.5" height="43"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="moneyTextChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="L4Q-ES-oOJ"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wN9-tQ-apE">
-                                                <rect key="frame" x="165.5" y="0.0" width="29.5" height="42.5"/>
+                                                <rect key="frame" x="165.5" y="0.0" width="29.5" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -76,7 +82,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="받는다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spd-D5-923">
-                                        <rect key="frame" x="0.0" y="139.5" width="96" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="141" width="96" height="43"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -84,7 +90,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="TXL-H6-Ma1">
-                                <rect key="frame" x="50" y="411" width="246" height="262"/>
+                                <rect key="frame" x="50" y="413" width="258" height="262"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매주" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJS-M7-dDC">
                                         <rect key="frame" x="0.0" y="0.0" width="59" height="41"/>
@@ -92,95 +98,11 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="aID-X0-SY8">
-                                        <rect key="frame" x="0.0" y="43" width="246" height="43"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aID-X0-SY8">
+                                        <rect key="frame" x="0.0" y="43" width="258" height="43"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pE1-wr-OKC">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="43"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="43" id="RD3-bj-EB7"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="월">
-                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <state key="selected" title="월">
-                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5c-dY-KlW">
-                                                <rect key="frame" x="36" y="0.0" width="30" height="43"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="43" id="B7j-GI-Xf5"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="화">
-                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <state key="selected" title="화">
-                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aw6-RQ-hnx">
-                                                <rect key="frame" x="72" y="0.0" width="30" height="43"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="43" id="sBo-Z6-JXN"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="수">
-                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <state key="selected" title="수">
-                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDT-sy-sVe">
-                                                <rect key="frame" x="108" y="0.0" width="30" height="43"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="43" id="rm3-d1-v3b"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="목">
-                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <state key="selected" title="목">
-                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6l-BF-cjx">
-                                                <rect key="frame" x="144" y="0.0" width="30" height="43"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="43" id="uXM-iP-faZ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="금">
-                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <state key="selected" title="금">
-                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ue-qe-62n">
-                                                <rect key="frame" x="180" y="0.0" width="30" height="43"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="43" id="kgd-rZ-fqp"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="토">
-                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <state key="selected" title="토">
-                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frx-vd-T5J">
-                                                <rect key="frame" x="216" y="0.0" width="30" height="43"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="43"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43" id="Z7m-06-D8X"/>
                                                 </constraints>
@@ -192,6 +114,111 @@
                                                 <state key="selected" title="일">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="sundayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P3Q-d5-qfK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pE1-wr-OKC">
+                                                <rect key="frame" x="38" y="0.0" width="30" height="43"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="43" id="RD3-bj-EB7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="월">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected" title="월">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="mondayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajs-be-YMS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5c-dY-KlW">
+                                                <rect key="frame" x="76" y="0.0" width="30" height="43"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="43" id="B7j-GI-Xf5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="화">
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected" title="화">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tuesdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aYS-jU-8Nn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aw6-RQ-hnx">
+                                                <rect key="frame" x="114" y="0.0" width="30" height="43"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="43" id="sBo-Z6-JXN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="수">
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected" title="수">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="wednesdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fyx-Pc-463"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDT-sy-sVe">
+                                                <rect key="frame" x="152" y="0.0" width="30" height="43"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="43" id="rm3-d1-v3b"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="목">
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected" title="목">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="thursdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wfu-ad-g40"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6l-BF-cjx">
+                                                <rect key="frame" x="190" y="0.0" width="30" height="43"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="43" id="uXM-iP-faZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="금">
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected" title="금">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fridayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="omh-Sc-HKK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ue-qe-62n">
+                                                <rect key="frame" x="228" y="0.0" width="30" height="43"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="43" id="kgd-rZ-fqp"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="토">
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected" title="토">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="saturdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="swl-t4-xeV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -202,28 +229,28 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="47f-Mz-Y3k">
-                                        <rect key="frame" x="0.0" y="131" width="233.5" height="43"/>
+                                        <rect key="frame" x="0.0" y="131" width="235.5" height="43"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="09" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pYy-uR-wPx">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="43"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="09" textAlignment="right" minimumFontSize="34" translatesAutoresizingMaskIntoConstraints="NO" id="pYy-uR-wPx">
+                                                <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43" id="6Ef-t9-Hte"/>
-                                                    <constraint firstAttribute="width" constant="42" id="T96-3R-Cuf"/>
+                                                    <constraint firstAttribute="width" constant="43" id="T96-3R-Cuf"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbS-3d-pjs">
-                                                <rect key="frame" x="50" y="0.0" width="29.5" height="43"/>
+                                                <rect key="frame" x="51" y="0.0" width="29.5" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aba-mn-Hia">
-                                                <rect key="frame" x="87.5" y="0.0" width="42" height="43"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="00" textAlignment="right" minimumFontSize="34" translatesAutoresizingMaskIntoConstraints="NO" id="aba-mn-Hia">
+                                                <rect key="frame" x="88.5" y="0.0" width="43" height="43"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="42" id="GHD-H7-x3v"/>
+                                                    <constraint firstAttribute="width" constant="43" id="GHD-H7-x3v"/>
                                                     <constraint firstAttribute="height" constant="43" id="fUX-Xj-sYp"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -231,7 +258,7 @@
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="분 부터" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfc-qQ-Mv7">
-                                                <rect key="frame" x="137.5" y="0.0" width="96" height="43"/>
+                                                <rect key="frame" x="139.5" y="0.0" width="96" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -239,36 +266,36 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rJd-gT-4cx">
-                                        <rect key="frame" x="0.0" y="176" width="233.5" height="43"/>
+                                        <rect key="frame" x="0.0" y="176" width="235.5" height="43"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="18" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ay-iM-ac7">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="43"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="18" textAlignment="right" minimumFontSize="34" translatesAutoresizingMaskIntoConstraints="NO" id="2ay-iM-ac7">
+                                                <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43" id="Jbc-Cn-gI0"/>
-                                                    <constraint firstAttribute="width" constant="42" id="uCh-la-bZq"/>
+                                                    <constraint firstAttribute="width" constant="43" id="uCh-la-bZq"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFe-Ui-Shg">
-                                                <rect key="frame" x="50" y="0.0" width="29.5" height="43"/>
+                                                <rect key="frame" x="51" y="0.0" width="29.5" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gA4-Rw-MIR">
-                                                <rect key="frame" x="87.5" y="0.0" width="42" height="43"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="00" textAlignment="right" minimumFontSize="34" translatesAutoresizingMaskIntoConstraints="NO" id="gA4-Rw-MIR">
+                                                <rect key="frame" x="88.5" y="0.0" width="43" height="43"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43" id="AUi-kd-qyR"/>
-                                                    <constraint firstAttribute="width" constant="42" id="oZ2-sV-ar8"/>
+                                                    <constraint firstAttribute="width" constant="43" id="oZ2-sV-ar8"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="분 까지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F48-25-uWh">
-                                                <rect key="frame" x="137.5" y="0.0" width="96" height="43"/>
+                                                <rect key="frame" x="139.5" y="0.0" width="96" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -294,6 +321,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="downButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8gS-gY-O5D"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -307,6 +337,14 @@
                             <constraint firstItem="TXL-H6-Ma1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="q6M-7o-k1j"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dayTextField" destination="YZX-oq-wkF" id="onx-Gj-VS3"/>
+                        <outlet property="endHourTextField" destination="2ay-iM-ac7" id="WVE-Yp-xmj"/>
+                        <outlet property="endMinTextField" destination="gA4-Rw-MIR" id="gAH-1g-1L8"/>
+                        <outlet property="moneyTextField" destination="y7P-Zl-ymP" id="q5n-vv-ke1"/>
+                        <outlet property="startHourTextField" destination="pYy-uR-wPx" id="s85-xA-IXr"/>
+                        <outlet property="startMinTextField" destination="aba-mn-Hia" id="LBI-rF-c0D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,18 +359,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="mpQ-Dj-kEP">
-                                <rect key="frame" x="50" y="194" width="171.5" height="188.5"/>
+                                <rect key="frame" x="50" y="194" width="171.5" height="198"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkA-WY-IMD">
-                                        <rect key="frame" x="0.0" y="0.0" width="118" height="81.5"/>
-                                        <string key="text">오늘
-출근해서</string>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkA-WY-IMD">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="출근해서" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEI-Je-aLR">
+                                        <rect key="frame" x="0.0" y="50" width="118" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="CI2-g6-kJv">
-                                        <rect key="frame" x="0.0" y="90.5" width="171.5" height="48"/>
+                                        <rect key="frame" x="0.0" y="100" width="171.5" height="48"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45,000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjK-iJ-Nnj">
                                                 <rect key="frame" x="0.0" y="0.0" width="135" height="48"/>
@@ -349,7 +391,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="벌었다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8I-gJ-mgi">
-                                        <rect key="frame" x="0.0" y="147.5" width="96" height="41"/>
+                                        <rect key="frame" x="0.0" y="157" width="96" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -357,7 +399,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Xlm-A4-Znx">
-                                <rect key="frame" x="50" y="442.5" width="210" height="44"/>
+                                <rect key="frame" x="50" y="452" width="210" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="퇴근까지 1시간 30분 남았습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgz-CA-q0A">
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="19.5"/>
@@ -374,7 +416,7 @@
                                 </subviews>
                             </stackView>
                             <pickerView contentMode="left" translatesAutoresizingMaskIntoConstraints="NO" id="OxK-Wa-kl3">
-                                <rect key="frame" x="50" y="537" width="220" height="220"/>
+                                <rect key="frame" x="50" y="546" width="220" height="220"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="0lq-rj-Kho"/>
                                     <constraint firstAttribute="height" constant="220" id="RlN-Zc-gZX"/>
